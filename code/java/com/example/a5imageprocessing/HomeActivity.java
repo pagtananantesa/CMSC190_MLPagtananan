@@ -1033,7 +1033,7 @@ public class HomeActivity extends AppCompatActivity implements SingleChoiceDialo
 //        Bitmap grayBitmap10 = Bitmap.createBitmap(width,height,Bitmap.Config.RGB_565);
 //        Utils.matToBitmap(openMat, grayBitmap10);    //contours
 //        SaveImage2(grayBitmap10,"open");
-        Imgproc.morphologyEx(openMat, closeMat, Imgproc.MORPH_CLOSE, kernel);
+//        Imgproc.morphologyEx(openMat, closeMat, Imgproc.MORPH_CLOSE, kernel);
 //        Bitmap grayBitmap11 = Bitmap.createBitmap(width,height,Bitmap.Config.RGB_565);
 //        Utils.matToBitmap(closeMat, grayBitmap11);    //contours
 //        SaveImage2(grayBitmap11,"close");
@@ -1043,7 +1043,7 @@ public class HomeActivity extends AppCompatActivity implements SingleChoiceDialo
         List<MatOfPoint> contourList = new ArrayList<MatOfPoint>();
 
 
-        Imgproc.Canny(closeMat, cannyEdges, 10, 100);
+        Imgproc.Canny(openMat, cannyEdges, 10, 100);
         Bitmap grayBitmap12= Bitmap.createBitmap(width,height,Bitmap.Config.RGB_565);
         Utils.matToBitmap(cannyEdges, grayBitmap12);    //contours
         SaveImage2(grayBitmap12,"canny");
