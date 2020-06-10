@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">iTALONG</string>
+    <string-array name="choice_items">
+        <item>1</item>
+        <item>3</item>
+        <item>5</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>a
+
+</resources>
